@@ -1,4 +1,4 @@
-tag ~ regex - comment (only for tags.txt.sample file, remove comments for tags.txt)
+tag ~ regex - comment (only for tags.txt.sample file, remove comments for tags.txt) NB all regex should be lowercase
 
 doctors ~ ((?<![a-z])gp(?![a-z])|doctor(?! who|ate))    - matches gp, but not gpt or chatgpt. matches doctor but not doctor who or doctorate
 site ~ (?<![a-z])(web)?sites?(?![a-z])                  - matches site or websites, doesn't match visited
