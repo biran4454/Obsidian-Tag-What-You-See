@@ -1,0 +1,8 @@
+tag ~ regex - comment (only for tags.txt.sample file, remove comments for tags.txt)
+
+doctors ~ ((?<![a-z])gp(?![a-z])|doctor(?! who|ate))    - matches gp, but not gpt or chatgpt. matches doctor but not doctor who or doctorate
+site ~ (?<![a-z])(web)?sites?(?![a-z])                  - matches site or websites, doesn't match visited
+internet                                                - keyword on its own matches that keyword, even in other words
+time_travel ~ time travel                               - tags can't contain spaces
+program ~ (program|script|code|coding)                  - matches any of these words (including codes and encode)
+hello ~ ([([ ]hello[[:punct:] ])                        - matches 'hello' as a word, but not at the start or end of a line
